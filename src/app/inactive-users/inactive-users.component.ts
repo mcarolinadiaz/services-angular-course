@@ -1,5 +1,5 @@
 import {Component, OnInit, Output} from '@angular/core';
-import {UserStatusService} from '../user-status.service';
+import {UserService} from '../user.service';
 
 @Component({
   selector: 'app-inactive-users',
@@ -9,7 +9,7 @@ import {UserStatusService} from '../user-status.service';
 export class InactiveUsersComponent implements OnInit {
   users: string[];
 
-  constructor(private userService: UserStatusService) {
+  constructor(private userService: UserService) {
   }
 
   ngOnInit() {
